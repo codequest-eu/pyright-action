@@ -9792,7 +9792,8 @@ async function getArgs(execPath) {
   if (pyrightPath) {
     args.push(path.join(pyrightPath, "package", "index.js"));
   }
-  const workingDirectory = core.getInput("working-directory");
+  const workspaceDirectory = core.getInput("workspace-directory");
+  const workingDirectory = core.getInput("working-directory") || workspaceDirectory;
   const createStub = core.getInput("create-stub");
   if (createStub) {
     args.push("--createstub", createStub);
@@ -9896,6 +9897,7 @@ async function getArgs(execPath) {
   }
   return {
     workingDirectory,
+    workspaceDirectory,
     annotate,
     pyrightVersion: pyrightInfo.version,
     command,
@@ -10022,7 +10024,9 @@ function printInfo(pyrightVersion, node, cwd, command, args) {
 async function main() {
   try {
     const node = getNodeInfo(process);
-    const { workingDirectory, annotate, pyrightVersion, command, args } = await getArgs(node.execPath);
+    const { workingDirectory, workspaceDirectory, annotate, pyrightVersion, command, args } = await getArgs(
+      node.execPath
+    );
     if (workingDirectory) {
       process.chdir(workingDirectory);
     }
@@ -10078,7 +10082,7 @@ async function main() {
       actionsCommand.issueCommand(
         diag.severity,
         {
-          file: diag.file,
+          file: workspaceDirectory ? path2.relative(workspaceDirectory, diag.file) : diag.file,
           line: line + 1,
           col: col + 1
         },

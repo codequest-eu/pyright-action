@@ -76,8 +76,8 @@ export async function getArgs(execPath: string): Promise<Args> {
     }
 
     // pyright-action options
-    const workingDirectory = core.getInput("working-directory");
     const workspaceDirectory = core.getInput("workspace-directory");
+    const workingDirectory = core.getInput("working-directory") || workspaceDirectory;
 
     // pyright flags
     const createStub = core.getInput("create-stub");
