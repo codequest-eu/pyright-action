@@ -38,7 +38,7 @@ jobs:
         password: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Pyright
-        uses: jakebailey/pyright-action@v2
+        uses: codequest-eu/pyright-action@feat/workspace-input
         with:
           version: PATH
-          working-directory: /opt/demo
+          workspace-directory: /opt/demo
