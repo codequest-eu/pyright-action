@@ -687,6 +687,44 @@ describe("with overridden flags", () => {
     });
 });
 
+describe("workspace-directory", () => {
+    test("relative paths", async () => {
+        mockedHelpers.getArgs.mockResolvedValue({
+            annotate: new Set(["error"]),
+            workingDirectory: "/some/workspace/dir",
+            workspaceDirectory: "/some/workspace",
+            pyrightVersion,
+            command: nodeExecPath,
+            args: ["/path/to/pyright/dist/index.js", "--outputjson"],
+        });
+
+        mockedCp.spawnSync.mockImplementation(() => ({
+            pid: -1,
+            output: [],
+            stdout: reportToString({
+                generalDiagnostics: [
+                    {
+                        file: "/some/workspace/dir/file1.py",
+                        range: { start: { line: 0, character: 0 }, end: { line: 1, character: 1 } },
+                        severity: "error",
+                        message: "some error",
+                    },
+                ],
+                summary: {
+                    errorCount: 1,
+                    warningCount: 0,
+                    informationCount: 0,
+                },
+            }) as any,
+            stderr: "" as any,
+            status: 1,
+            signal: null,
+        }));
+
+        await main();
+    });
+});
+
 function reportToString(report: Report): string {
     return JSON.stringify(report);
 }

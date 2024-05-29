@@ -1570,3 +1570,82 @@ exports[`with overridden flags > pyproject.toml bad toml > process.chdir 1`] = `
   ],
 ]
 `;
+
+exports[`workspace-directory > relative paths > command.issueCommand 1`] = `
+[
+  [
+    "error",
+    {
+      "col": 1,
+      "file": "dir/file1.py",
+      "line": 1,
+    },
+    "some error",
+  ],
+]
+`;
+
+exports[`workspace-directory > relative paths > core.error 1`] = `[]`;
+
+exports[`workspace-directory > relative paths > core.info 1`] = `
+[
+  [
+    "pyright 1.1.240, node v20.8.1, pyright-action 1.1.0",
+  ],
+  [
+    "Working directory: /some/workspace/dir",
+  ],
+  [
+    "Running: /path/to/node /path/to/pyright/dist/index.js --outputjson",
+  ],
+  [
+    "/some/workspace/dir/file1.py:1:1 - error: some error",
+  ],
+  [
+    "1 error, 0 warnings, 0 informations",
+  ],
+]
+`;
+
+exports[`workspace-directory > relative paths > core.setFailed 1`] = `
+[
+  [
+    "1 error",
+  ],
+]
+`;
+
+exports[`workspace-directory > relative paths > core.warning 1`] = `[]`;
+
+exports[`workspace-directory > relative paths > cp.spawnSync 1`] = `
+[
+  [
+    "/path/to/node",
+    [
+      "/path/to/pyright/dist/index.js",
+      "--outputjson",
+    ],
+    {
+      "encoding": "utf8",
+      "maxBuffer": 104857600,
+      "stdio": [
+        "ignore",
+        "pipe",
+        "inherit",
+      ],
+    },
+  ],
+]
+`;
+
+exports[`workspace-directory > relative paths > fs.existsSync 1`] = `[]`;
+
+exports[`workspace-directory > relative paths > fs.readFileSync 1`] = `[]`;
+
+exports[`workspace-directory > relative paths > process.chdir 1`] = `
+[
+  [
+    "/some/workspace/dir",
+  ],
+]
+`;

@@ -29,6 +29,7 @@ export function getNodeInfo(process: NodeInfo): NodeInfo {
 
 export interface Args {
     workingDirectory: string;
+    workspaceDirectory: string;
     annotate: ReadonlySet<"error" | "warning">;
     pyrightVersion: SemVer;
     command: string;
@@ -76,6 +77,7 @@ export async function getArgs(execPath: string): Promise<Args> {
 
     // pyright-action options
     const workingDirectory = core.getInput("working-directory");
+    const workspaceDirectory = core.getInput("workspace-directory");
 
     // pyright flags
     const createStub = core.getInput("create-stub");
@@ -206,6 +208,7 @@ export async function getArgs(execPath: string): Promise<Args> {
 
     return {
         workingDirectory,
+        workspaceDirectory,
         annotate,
         pyrightVersion: pyrightInfo.version,
         command,

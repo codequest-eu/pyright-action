@@ -16,6 +16,9 @@ inputs:
   working-directory:
     description: 'Directory to run pyright in. If not specified, the repo root will be used.'
     required: false
+  workspace-directory:
+    description: 'Directory where the repository was checked out. If not specified, the GitHub workspace will be used.'
+    required: false
   annotate:
     description: 'A comma separated list of check annotations to emit. May be "none"/"false", "errors", "warnings", or "all"/"true" (shorthand for "errors, warnings").'
     required: false

@@ -122,6 +122,9 @@ exports[`getArgs > valid version > 1.1.308 dashes > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -156,6 +159,7 @@ exports[`getArgs > valid version > 1.1.308 dashes > result 1`] = `
     "version": "1.1.308",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -261,6 +265,9 @@ exports[`getArgs > valid version > 1.1.309 dashes > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -295,6 +302,7 @@ exports[`getArgs > valid version > 1.1.309 dashes > result 1`] = `
     "version": "1.1.309",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -400,6 +408,9 @@ exports[`getArgs > valid version > 1.1.310 dashes > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -434,6 +445,7 @@ exports[`getArgs > valid version > 1.1.310 dashes > result 1`] = `
     "version": "1.1.310",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -542,6 +554,9 @@ exports[`getArgs > valid version > annotate "" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -572,6 +587,7 @@ exports[`getArgs > valid version > annotate "" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -680,6 +696,9 @@ exports[`getArgs > valid version > annotate "False" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -707,6 +726,7 @@ exports[`getArgs > valid version > annotate "False" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -815,6 +835,9 @@ exports[`getArgs > valid version > annotate "True" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -845,6 +868,7 @@ exports[`getArgs > valid version > annotate "True" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -953,6 +977,9 @@ exports[`getArgs > valid version > annotate "all" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -983,6 +1010,7 @@ exports[`getArgs > valid version > annotate "all" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1091,6 +1119,9 @@ exports[`getArgs > valid version > annotate "errors" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1120,6 +1151,7 @@ exports[`getArgs > valid version > annotate "errors" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1228,6 +1260,9 @@ exports[`getArgs > valid version > annotate "errors, warnings" > core.getInput 1
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1258,6 +1293,7 @@ exports[`getArgs > valid version > annotate "errors, warnings" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1366,6 +1402,9 @@ exports[`getArgs > valid version > annotate "false" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1393,6 +1432,7 @@ exports[`getArgs > valid version > annotate "false" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1501,6 +1541,9 @@ exports[`getArgs > valid version > annotate "none" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1528,6 +1571,7 @@ exports[`getArgs > valid version > annotate "none" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1636,6 +1680,9 @@ exports[`getArgs > valid version > annotate "true" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1666,6 +1713,7 @@ exports[`getArgs > valid version > annotate "true" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1774,6 +1822,9 @@ exports[`getArgs > valid version > annotate "warnings" > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1803,6 +1854,7 @@ exports[`getArgs > valid version > annotate "warnings" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -1911,6 +1963,9 @@ exports[`getArgs > valid version > annotate "warnings,errors" > core.getInput 1`
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -1941,6 +1996,7 @@ exports[`getArgs > valid version > annotate "warnings,errors" > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -2045,6 +2101,9 @@ exports[`getArgs > valid version > annotate invalid > core.getInput 1`] = `
   ],
   [
     "working-directory",
+  ],
+  [
+    "workspace-directory",
   ],
 ]
 `;
@@ -2152,6 +2211,9 @@ exports[`getArgs > valid version > annotate invalid comma > core.getInput 1`] = 
   ],
   [
     "working-directory",
+  ],
+  [
+    "workspace-directory",
   ],
 ]
 `;
@@ -2263,6 +2325,9 @@ exports[`getArgs > valid version > cached > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -2293,6 +2358,7 @@ exports[`getArgs > valid version > cached > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -2381,6 +2447,9 @@ exports[`getArgs > valid version > createstub > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -2410,6 +2479,7 @@ exports[`getArgs > valid version > createstub > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -2518,6 +2588,9 @@ exports[`getArgs > valid version > dependencies > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -2547,6 +2620,7 @@ exports[`getArgs > valid version > dependencies > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -2648,6 +2722,9 @@ exports[`getArgs > valid version > extra-args malformed > core.getInput 1`] = `
   ],
   [
     "working-directory",
+  ],
+  [
+    "workspace-directory",
   ],
 ]
 `;
@@ -2759,6 +2836,9 @@ exports[`getArgs > valid version > extra-args quotes > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -2792,6 +2872,7 @@ exports[`getArgs > valid version > extra-args quotes > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -2900,6 +2981,9 @@ exports[`getArgs > valid version > many options > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -2949,6 +3033,7 @@ exports[`getArgs > valid version > many options > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "/path/to/project",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3057,6 +3142,9 @@ exports[`getArgs > valid version > no comments > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3084,6 +3172,7 @@ exports[`getArgs > valid version > no comments > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3192,6 +3281,9 @@ exports[`getArgs > valid version > pylance-version > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3222,6 +3314,7 @@ exports[`getArgs > valid version > pylance-version > result 1`] = `
     "version": "9.9.999",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3353,6 +3446,9 @@ exports[`getArgs > valid version > skip-unannotated > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3384,6 +3480,7 @@ exports[`getArgs > valid version > skip-unannotated > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3492,6 +3589,9 @@ exports[`getArgs > valid version > stats > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3520,6 +3620,7 @@ exports[`getArgs > valid version > stats > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3628,6 +3729,9 @@ exports[`getArgs > valid version > verbose > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3659,6 +3763,7 @@ exports[`getArgs > valid version > verbose > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3767,6 +3872,9 @@ exports[`getArgs > valid version > verbose flag > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3795,6 +3903,7 @@ exports[`getArgs > valid version > verbose flag > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -3903,6 +4012,9 @@ exports[`getArgs > valid version > verifytypes > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -3933,6 +4045,7 @@ exports[`getArgs > valid version > verifytypes > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -4041,6 +4154,9 @@ exports[`getArgs > valid version > verifytypes flag > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -4069,6 +4185,7 @@ exports[`getArgs > valid version > verifytypes flag > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -4194,6 +4311,9 @@ exports[`getArgs > valid version > version path > core.getInput 1`] = `
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -4234,6 +4354,7 @@ exports[`getArgs > valid version > version path > result 1`] = `
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -4532,6 +4653,9 @@ exports[`getArgs > valid version > version takes precedence over pylance-version
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -4562,6 +4686,7 @@ exports[`getArgs > valid version > version takes precedence over pylance-version
     "version": "1.1.310",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -4667,6 +4792,9 @@ exports[`getArgs > valid version > version with garbage but success after > core
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -4716,6 +4844,7 @@ exports[`getArgs > valid version > version with garbage but success after > resu
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 
@@ -4800,6 +4929,9 @@ exports[`getArgs > valid version > version with garbage but version > core.getIn
   [
     "working-directory",
   ],
+  [
+    "workspace-directory",
+  ],
 ]
 `;
 
@@ -4840,6 +4972,7 @@ exports[`getArgs > valid version > version with garbage but version > result 1`]
     "version": "1.1.240",
   },
   "workingDirectory": "",
+  "workspaceDirectory": "",
 }
 `;
 

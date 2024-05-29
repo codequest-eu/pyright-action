@@ -23,7 +23,9 @@ function printInfo(pyrightVersion: SemVer, node: NodeInfo, cwd: string, command:
 export async function main() {
     try {
         const node = getNodeInfo(process);
-        const { workingDirectory, annotate, pyrightVersion, command, args } = await getArgs(node.execPath);
+        const { workingDirectory, workspaceDirectory, annotate, pyrightVersion, command, args } = await getArgs(
+            node.execPath,
+        );
         if (workingDirectory) {
             process.chdir(workingDirectory);
         }
@@ -93,7 +95,7 @@ export async function main() {
             actionsCommand.issueCommand(
                 diag.severity,
                 {
-                    file: diag.file,
+                    file: workspaceDirectory ? path.relative(workspaceDirectory, diag.file) : diag.file,
                     line: line + 1,
                     col: col + 1,
                 },
